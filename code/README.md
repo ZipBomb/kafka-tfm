@@ -1,14 +1,8 @@
 # How to train models with our custom MLflow Projects wrappers for regression
 
-<div style="text-align: justify">
-
-</div>
-
 ## Getting Started
 
-<div style="text-align: justify">
 Once you have a remote MLflow server correctly configured and running (see [How to run MLflow on AWS EB for concurrent and scalable experimentation](../mlflow/README.md)) you are ready to start taking advantage of the scikit-learn/xgboost + MLflow tracking wrappers in /code.
-</div>
 
 ### Prerequisites
 
