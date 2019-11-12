@@ -1,6 +1,6 @@
-## NRT pipeline for quality assurance in a mining process
-___
+# NRT pipeline for quality assurance in a mining process
 
+<div style="text-align: justify">
 
 This repository contains the code, data and documentation generated for my Master's degree final project. The main objective of the project was to showcase the effectiveness of Near Real-Time data pipelines on complex environments that critically demand low response times. The repository contains the following:
 
@@ -12,10 +12,13 @@ This repository contains the code, data and documentation generated for my Maste
 Further explanations can be found in the README of each specific directory. Also, documentation for the project (currently only available in GL) can be found at [/doc](doc).
 </div>
 
-### Demo
+## Demo
 
 ![](doc/gif/grafana.gif)
 
 ![](doc/gif/new-run.gif)
 
 ![](doc/gif/mlflow.gif)
+
+---
+**Project licensed under the MIT License**
