@@ -1,0 +1,13 @@
+# code/MLproject
+
+name: nnet
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_layers: {type: string, default: "1"}
+      layer_size: {type: string, default: "20"}
+      training_data_path: {type: path, default: ../data/training_data.csv}
+    command: "python ./nnet.py -nl {n_layers} -ls {layer_size} -i {training_data_path}"

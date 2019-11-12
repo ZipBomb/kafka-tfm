@@ -1,0 +1,12 @@
+# code/MLproject
+
+name: linear_svr
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      c: {type: string, default: "[1]"}
+      training_data_path: {type: path, default: ../data/training_data.csv}
+    command: "python ./linear_svr.py -c {c} -i {training_data_path}"

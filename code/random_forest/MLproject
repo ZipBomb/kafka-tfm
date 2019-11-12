@@ -1,0 +1,12 @@
+# code/MLproject
+
+name: random_forest
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_estimators: {type: string, default: "1"}
+      training_data_path: {type: path, default: ../data/training_data.csv}
+    command: "python ./random_forest.py -ne {n_estimators} -i {training_data_path}"

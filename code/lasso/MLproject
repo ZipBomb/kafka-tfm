@@ -1,0 +1,12 @@
+# code/MLproject
+
+name: lasso
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      alpha: {type: string, default: "[1]"}
+      training_data_path: {type: path, default: ../data/training_data.csv}
+    command: "python ./lasso.py -a {alpha} -i {training_data_path}"

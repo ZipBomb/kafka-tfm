@@ -1,0 +1,14 @@
+# code/MLproject
+
+name: xgb_reg
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_estimators: {type: string, default: "100"}
+      max_depth: {type: string, default: "6"}
+      learning_rate: {type: string, default: "0.05"}
+      training_data_path: {type: path, default: ../data/training_data.csv}
+    command: "python ./xgb_reg.py -ne {n_estimators} -md {max_depth} -lr {learning_rate} -i {training_data_path}"

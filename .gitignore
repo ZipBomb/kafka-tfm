@@ -1,0 +1,10 @@
+*.txt
+notebook/.local
+notebook/.ipynb_checkpoints
+__pycache__/
+mlruns/
+img/
+*.zip
+data/MiningProcess_Flotation_Plant_Database.csv
+kafka/udf/ksql-udf-mining-prediction/target/
+.vscode/

@@ -1,0 +1,16 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {},
+  "Ports": [
+    {
+      "ContainerPort": "5000"
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/var/mlflow",
+      "ContainerDirectory": "/mlflow"
+    }
+  ],
+  "Logging": "/var/log/nginx"
+}

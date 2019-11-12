@@ -1,0 +1,14 @@
+# code/MLproject
+
+name: cart_train
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      max_depth: {type: string, default: "None"}
+      min_samples_leaf: {type: string, default: "1"}
+      min_samples_split: {type: string, default: "2"}
+      training_data_path: {type: path, default: ../data/training_data.csv}
+    command: "python ./cart_train.py -md {max_depth} -msl {min_samples_leaf} -mss {min_samples_split} -i {training_data_path}"
